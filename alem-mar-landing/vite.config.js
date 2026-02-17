@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-  // Removed react plugin
   plugins: [],
-  base: '/alem-mar-landing/'
+  base: '/alem-mar-landing/', // Ensure correct base path for GitHub Pages
 });
