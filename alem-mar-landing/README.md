@@ -1,16 +1,77 @@
-# React + Vite
+# Alem Mar Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o Projeto
 
-Currently, two official plugins are available:
+A **Alem Mar Landing Page** é um projeto desenvolvido para promover destinos turísticos no litoral nordestino do Brasil. Com um design moderno e responsivo, a página oferece informações detalhadas sobre os destinos, destacando as belezas naturais e culturais da região. O objetivo é proporcionar uma experiência única para os visitantes, conectando-os com a essência do Nordeste brasileiro.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## React Compiler
+- **Seção Hero**: Apresentação visual impactante com animações e um call-to-action.
+- **Nossa História**: Informações sobre a história e os valores da empresa.
+- **Destinos**: Cards interativos com imagens, descrições e destaques dos principais destinos turísticos.
+- **Diferenciais**: Destaque para os diferenciais da empresa, como turismo sustentável e conexão local.
+- **Depoimentos**: Feedbacks de clientes satisfeitos.
+- **Rodapé**: Informações de contato e links úteis.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca JavaScript para construção da interface de usuário.
+- **Vite**: Ferramenta de build rápida para desenvolvimento front-end.
+- **CSS3**: Estilização responsiva e moderna com animações e transições.
+- **ESLint**: Ferramenta para análise de código e boas práticas.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estrutura do Projeto
+
+```
+alem-mar-landing/
+├── public/                # Arquivos estáticos
+├── src/                   # Código-fonte do projeto
+│   ├── assets/            # Imagens e outros recursos
+│   ├── components/        # Componentes reutilizáveis
+│   ├── layouts/           # Layouts principais
+│   ├── sections/          # Seções da página
+│   └── index.css          # Estilos globais
+├── .gitignore             # Arquivos ignorados pelo Git
+├── package.json           # Dependências e scripts do projeto
+├── vite.config.js         # Configuração do Vite
+└── README.md              # Documentação do projeto
+```
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/HudsonNeves/alem-mar-landing.git
+   ```
+
+2. Acesse o diretório do projeto:
+   ```bash
+   cd alem-mar-landing
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse o projeto no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorias ou correções.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+
+---
+
+Desenvolvido por [Hudson Neves](https://github.com/HudsonNeves) | [Repositório no GitHub](https://github.com/HudsonNeves/alem-mar-landing)

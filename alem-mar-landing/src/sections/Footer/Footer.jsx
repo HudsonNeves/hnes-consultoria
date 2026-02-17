@@ -110,6 +110,12 @@ const Footer = () => {
             <span className="payment-icon">💳 Pix</span>
             <span className="payment-icon">📱 Parcelamento</span>
           </div>
+          <div className="footer-credits">
+            <p>
+              Desenvolvido por <a href="https://github.com/HudsonNeves" target="_blank" rel="noopener noreferrer">Hudson Neves</a> |
+              <a href="https://github.com/HudsonNeves/alem-mar-landing" target="_blank" rel="noopener noreferrer"> Repositório no GitHub</a>
+            </p>
+          </div>
         </div>
       </Container>
     </footer>
