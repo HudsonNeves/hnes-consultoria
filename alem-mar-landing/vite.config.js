@@ -4,4 +4,5 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   // Removed react plugin
   plugins: [],
+  base: '/alem-mar-landing/'
 });
