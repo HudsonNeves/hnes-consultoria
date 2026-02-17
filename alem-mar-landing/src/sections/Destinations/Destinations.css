@@ -1,0 +1,199 @@
+/* src/sections/Destinations/Destinations.css */
+.destinations {
+  padding: 100px 0;
+  background: #F9FAFB;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: clamp(32px, 5vw, 48px);
+  color: #1A3B3B;
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(45deg, #2F6B6B, #D4AF37);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #4B5563;
+  max-width: 600px;
+  margin: 20px auto 0;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.destination-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.destination-card:hover {
+  transform: scale(1.05); /* Destaque sutil ao passar o mouse */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-image .card-state {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #1A3B3B;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.highlight-tag {
+  font-size: 12px;
+  color: #2F6B6B;
+  background: rgba(47, 107, 107, 0.1);
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-label {
+  font-size: 12px;
+  color: #6B7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1A3B3B;
+}
+
+.destinations-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Destaque sutil para o card de Arembepe */
+.destination-card:nth-child(3) {
+  border: 2px solid #FFD700; /* Destaque com borda dourada */
+  background-color: #FFFBEA; /* Fundo sutilmente diferente */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .destinations {
+    padding: 60px 0;
+  }
+  
+  .destinations-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .card-image {
+    height: 200px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .price-value {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+  }
+  
+  .card-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .card-footer .btn {
+    width: 100%;
+  }
+}

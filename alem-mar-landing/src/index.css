@@ -1,0 +1,48 @@
+/* Adicionar ao final do src/index.css */
+
+/* Animações de scroll */
+.fade-out {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Loading state */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1A3B3B;
+  color: #D4AF37;
+  font-size: 24px;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2F6B6B, #D4AF37);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1A3B3B, #2F6B6B);
+}
+
+/* Seleção de texto */
+::selection {
+  background: #D4AF37;
+  color: #1A3B3B;
+}

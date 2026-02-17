@@ -1,0 +1,104 @@
+/* src/components/Button/Button.css */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Variants */
+.btn-primary {
+  background: linear-gradient(45deg, #2F6B6B, #D4AF37);
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #1A3B3B, #2F6B6B);
+  box-shadow: 0 4px 15px rgba(42, 98, 98, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1A3B3B;
+  border: 2px solid #D4AF37;
+}
+
+.btn-secondary:hover {
+  background: #D4AF37;
+  color: #FFFFFF;
+  border-color: #D4AF37;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.btn-outline:hover {
+  background: #FFFFFF;
+  color: #1A3B3B;
+}
+
+/* Sizes */
+.btn-small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.btn-medium {
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+.btn-large {
+  padding: 16px 40px;
+  font-size: 18px;
+}
+
+.btn-full-width {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .btn-medium {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+  
+  .btn-large {
+    padding: 14px 30px;
+    font-size: 16px;
+  }
+}
